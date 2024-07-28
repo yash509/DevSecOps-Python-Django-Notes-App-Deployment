@@ -10,6 +10,6 @@ spec:
     app: django-notes
   ports:
     - protocol: TCP
-      port: 5000  # Port exposed by the service externally (outside the cluster)
-      targetPort: 5000  # Port your application listens on inside the pods
+      port: 8000  # Port exposed by the service externally (outside the cluster)
+      targetPort: 8000  # Port your application listens on inside the pods
   type: LoadBalancer
