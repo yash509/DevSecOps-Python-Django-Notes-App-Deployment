@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: django-notes-deployment
+spec:
+  replicas: 6  # Number of desired replicas
+  selector:
+    matchLabels:
+      app: django-notes
+  template:
+    metadata:
+      labels:
+        app: django-notes
+    spec:
+      containers:
+      - name: django-notes
+        image: yash5090/django-notes:latest
+        ports:
+        - containerPort: 5000
