@@ -16,4 +16,4 @@ spec:
       - name: django-notes
         image: yash5090/django-notes:latest
         ports:
-        - containerPort: 5000
+        - containerPort: 8000
