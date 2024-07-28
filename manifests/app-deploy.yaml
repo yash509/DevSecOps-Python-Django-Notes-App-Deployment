@@ -16,4 +16,4 @@ spec:
         - name: django-notes
           image: yash5090/django-notes:latest # Replace with the actual image tag
           ports:
-            - containerPort: 5000 # Replace with the port your Tetris game listens on
+            - containerPort: 8000 # Replace with the port your Tetris game listens on
